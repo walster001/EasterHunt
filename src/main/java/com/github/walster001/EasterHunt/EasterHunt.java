@@ -19,7 +19,7 @@ public final class EasterHunt extends JavaPlugin {
     }
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String eh, String[] args) {
-    	if (cmd.getName().equalsIgnoreCase("easterhunt")) { // If the player typed /basic then do the following...
+    	if (cmd.getName().equalsIgnoreCase("easterhunt")) {
     		// doSomething
     		return true;
     	} else if (cmd.getName().equalsIgnoreCase("easterhunt start")) {
