@@ -20,7 +20,8 @@ public final class EasterHunt extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String eh, String[] args) {
     	if (cmd.getName().equalsIgnoreCase("easterhunt")) {
-    		// doSomething
+    		if (!(sender instanceof Player))
+    		        sender.sendMessage("This command cannot be run from the console.");
     		return true;
     	} else if (cmd.getName().equalsIgnoreCase("easterhunt start")) {
     		if (!(sender instanceof Player)) {
