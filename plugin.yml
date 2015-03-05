@@ -22,5 +22,5 @@ permissions:
        description: Allows displaying of the EasterHunt help menu
        default: OP
     easterhunt.edit:
-       description: Allows editing of a running Easter Hunt
+       description: Allows editing of a running Easter Hunt!
        default: OP
