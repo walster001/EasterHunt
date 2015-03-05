@@ -1,3 +1,26 @@
 name: EasterHunt
 main: com.github.walster001.EasterHunt
 version: 0.1
+commands:
+   easterhunt:
+      description: Brings up the help menu for easterhunt
+      usage: /easterhunt <command>
+      permission: easterHunt.help
+      permission-message: You need the permission EasterHunt.help to show easterhunts help menu!
+   easterhunt edit:
+      description: Edit an Easter Egg Hunt
+      usage: /easterhunt edit
+      permission: easterHunt.edit
+      permission-message: You don't have permission to use this command O_O
+permissions:
+    easterhunt.*:
+        description: Gives access to all EasterHunt commands
+        children:
+            easterhunt.edit: true
+            easterhunt.help: true
+    easterhunt.help:
+       description: Allows displaying of the EasterHunt help menu
+       default: OP
+    easterhunt.edit:
+       description: Allows editing of a running Easter Hunt
+       default: OP
